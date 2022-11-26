@@ -39,7 +39,7 @@
   ! see star/defaults/controls.defaults
 
   ! starting specifications
-    initial_mass = 30 ! in Msun units
+    initial_mass = 2 ! in Msun units
     initial_z = 0.02
 
   ! when to stop
