@@ -52,15 +52,54 @@ Windows doesn't have pgplot for visualization. To access it install [VcXsrv Wind
 </p>
 </details>
 
-## Simulations
+## Build
 
 To build project files, go to root project directory and run
 ```bash
 ./mk 
 ```
 
+## Demo
 To run the simulations, go to root project directory and run 
 ```bash
 ./rn
 ```
+You should see a pgplot after a couple minutes like this:
+
 ![High Mass Stellar Evolution](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/high_mass/highmass_sim.gif)
+
+The simulations will take a while to run. MESA ends a simulation either when it can’t converge the model anymore, or when it
+reaches a specified stopping condition. Your model should stop with a message in your
+terminal similar to 
+```shell
+stopping because of problems dt < min_timestep_limit
+```
+If you see a different message, e.g., something about hydrodynamics, then something has
+gone wrong.
+
+## Run Configurations
+
+In the `inlist_project` file the following parameters may be changed to simulate custom parametric simulations:
+- Under `&star_job`: `pgstar_flag = .true` tells MESA to have live plots on screen. If you want the plots running in background set `pgstar_flag = .false`
+- Under `&controls`: 
+  - `initial_mass` sets the initial mass of the star in the simulation in solar masses. For the purpose of this repository it was set to 2 and 40 respectively for low and high mass stars.
+  - `initial_z` sets the star's metallicity as a percentage (Z = 0.02 is solar metallicity). In this repository, for low mass star, it was set to 0.02 and for high mass star, it was set to 0.01. 
+  - `! when to stop` puts an exit condition to the simulation. `xa_central_lower_limit_species(1) = ‘h1’` tells MESA to stop when the
+central mass fraction of H1 drops below a user-defined limit.
+`xa_central_lower_limit(1) = 1d-3` tells MESA that the user-defined limit is
+0.001. Since the main sequence ends when central hydrogen is exhausted, this
+tells MESA to end the simulation at the terminal age main sequence (TAMS).
+
+## MESA Output Analysis
+MESA outputs several files to use, all located in the LOGS folder. The `history.data`
+file gives the parameters at each timestep of the model. The profile files (named `profileN.dat`
+with N is an integer counting up from 1) give information about the internal structure of
+the model at a given timestep. The `profiles.index` file shows which profiles map to which
+stellar models. The outputs can be plotted using Python, Matlab or any data analysis language of your choice. 
+
+#### Python Analysis
+
+
+
+## Contributions
+Feel free to create a pull request. 
