@@ -1,4 +1,5 @@
 # Low-High-Mass-Star-Evolution
+## Introduction
 Stellar evolution codes are one of the basic building blocks of stellar astrophysics. These
 codes model the interior of a star and then evolve that model over time so we can test our
 understanding of the physics of stars. Stellar codes help us understand processes that happen
@@ -7,7 +8,12 @@ observed. They help us refine our understanding of atomic physics, nuclear physi
 dynamics, and thermodynamics and even make predictions about galaxies or our Universe
 as a whole.
 
-![High Mass Stellar Evolution](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/high_mass/highmass_sim.gif)
+## Some Math
+Stars are governed by the equations of stellar structure along with equations that dictate
+the mixing and nuclear burning of chemical elements. For a spherically symmetric and
+non-rotating star (the simplest model), the equations are:
+
+
 
 ## About MESA
 MESA is an open-source one-dimensional stellar evolution code written mostly in Fortran.
@@ -48,3 +54,4 @@ To run the simulations, go to root project directory and run
 ```bash
 ./rn
 ```
+![High Mass Stellar Evolution](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/high_mass/highmass_sim.gif)
