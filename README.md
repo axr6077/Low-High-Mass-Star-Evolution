@@ -8,6 +8,8 @@ observed. They help us refine our understanding of atomic physics, nuclear physi
 dynamics, and thermodynamics and even make predictions about galaxies or our Universe
 as a whole.
 
+![pgplot](./pgstar.png)
+
 ## Some Math
 Stars are governed by the equations of stellar structure along with equations that dictate
 the mixing and nuclear burning of chemical elements. For a spherically symmetric and
