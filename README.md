@@ -9,6 +9,12 @@ as a whole.
 
 ![High Mass Stellar Evolution](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/high_mass/highmass_sim.gif)
 
+## About MESA
+MESA is an open-source one-dimensional stellar evolution code written mostly in Fortran.
+For the first 10 years of its life it was primarily developed by Bill Paxton, along with in-
+volvement from many other astrophysicists. Currently its actively maintained by a globally distributed
+community. 
+
 ## Installation
 
 The MESA-sdk can be found [here](https://docs.mesastar.org/en/release-r22.05.1/quickstart.html).
