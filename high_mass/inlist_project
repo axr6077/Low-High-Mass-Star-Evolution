@@ -40,7 +40,7 @@
 
   ! starting specifications
     initial_mass = 40 ! in Msun units
-    initial_z = 0.01
+    initial_z = 0.02
 
   ! when to stop
 
