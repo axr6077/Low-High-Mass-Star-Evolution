@@ -1,2 +1,12 @@
 # Low-High-Mass-Star-Evolution
-This repository contains the project files for simulating a low and a high mass star to analyze stellar structure and evolution. 
+Simulations of Low and High Mass Stars to explore Stellar structure and evolution in both kind of stars. 
+
+To build project files, go to root project directory and run
+```
+./mk 
+```
+
+To run the simulations, go to root project directory and run 
+```
+./rn
+```
