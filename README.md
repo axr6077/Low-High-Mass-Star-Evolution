@@ -17,7 +17,7 @@ The MESA-sdk can be found [here](https://docs.mesastar.org/en/release-r22.05.1/q
 - 20 GB free disk space
 
 #### Windows Users:
-- [Mesa Docker](https://github.com/evbauer/MESA-Docker) contains pre-built version inside a container. 
+- [Mesa-Docker](https://github.com/evbauer/MESA-Docker) contains pre-built version inside a container. 
 - [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) installs an instance of Linux within Windows where MESA can be built. 
 
 Windows doesn't have pgplot for visualization. To access it install [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/).
