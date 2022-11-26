@@ -1,6 +1,8 @@
 # Low-High-Mass-Star-Evolution
 Simulations of Low and High Mass Stars to explore Stellar structure and evolution in both kind of stars. 
 
+![High Mass Stellar Evolution](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/high_mass/highmass_sim.gif)
+
 ## Installation
 
 The MESA-sdk can be found [here](https://docs.mesastar.org/en/release-r22.05.1/quickstart.html).
