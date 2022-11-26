@@ -11,7 +11,7 @@ as a whole.
 ## Some Math
 Stars are governed by the equations of stellar structure along with equations that dictate
 the mixing and nuclear burning of chemical elements. For a spherically symmetric and
-non-rotating star (the simplest model), the equations are:
+non-rotating star (the simplest model), the equations are (use light theme if its not visible):
 
 ![eq1](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/equations/eq1.svg)
 
