@@ -15,6 +15,16 @@ non-rotating star (the simplest model), the equations are (use light theme if it
 
 ![eq1](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/equations/eq1.svg)
 
+![eq2](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/equations/eq2.svg)
+
+![eq3](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/equations/eq3.svg)
+
+![eq4](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/equations/eq4.svg)
+
+![eq5](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/equations/eq5.svg)
+
+Dont worry, MESA will do everything internally!
+
 ## About MESA
 MESA is an open-source one-dimensional stellar evolution code written mostly in Fortran.
 For the first 10 years of its life it was primarily developed by Bill Paxton, along with involvement from many other astrophysicists. Currently its actively maintained by a globally distributed
