@@ -101,7 +101,13 @@ stellar models. The outputs can be plotted using Python, Matlab or any data anal
 
 #### Python Analysis
 
+Refer to [this notebook](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/analysis.ipynb) for complete analysis of the stellar structure. 
 
+
+## External Libraries
+[py_mesa_reader](https://github.com/wmwolf/py_mesa_reader) by [Bill Wolf](https://github.com/wmwolf)
+
+[mesaplot](https://github.com/rjfarmer/mesaplot) by [Robert Farmer](https://github.com/rjfarmer)
 
 ## Contributions
 Feel free to create a pull request. 
