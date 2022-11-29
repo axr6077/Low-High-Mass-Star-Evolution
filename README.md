@@ -143,8 +143,7 @@ plt.ylabel('$\log L/L_\odot$')
 plt.show()
 ```
 
-[!HR_Diagram](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/out/output_22_0.png)
-
+![HR_Diagram](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/out/output_22_0.png)
 
 
 ## External Libraries
