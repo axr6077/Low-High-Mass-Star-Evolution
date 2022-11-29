@@ -103,6 +103,49 @@ stellar models. The outputs can be plotted using Python, Matlab or any data anal
 
 Refer to [this notebook](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/analysis.ipynb) for complete analysis of the stellar structure. 
 
+Access History Data:
+```python
+hist_high_mass = mr.MesaData(highMassRoot + '/history.data')
+hist_low_mass = mr.MesaData(lowMassRoot + '/history.data')
+```
+
+Find index of ZAMS onset:
+```python
+low_mass_center_h1 = hist_low_mass.center_h1
+high_mass_center_h1 = hist_high_mass.center_h1
+
+# this is when the core has 1% of Hydrogen
+CENTRAL_H1_MASS_FRACTION = 0.7 * 0.99 
+
+def find_zams(center_h1_list):
+    res = next(x for x, val in enumerate(center_h1_list)
+                                  if val < CENTRAL_H1_MASS_FRACTION)
+    return res - 1
+
+low_mass_zams_idx = find_zams(low_mass_center_h1)
+high_mass_zams_idx = find_zams(high_mass_center_h1)
+```
+
+Plot HRD:
+
+```python
+plt.style.use('dark_background')
+plt.plot(hist_high_mass.log_Teff, hist_high_mass.log_L, label = 'High Mass MS')
+# low_mass_profile = l.profile_data(profile_number=5)
+plt.plot(hist_low_mass.log_Teff, hist_low_mass.log_L, label = 'Low Mass MS')
+plt.legend()
+plt.title('Main Sequence HRD')
+# invert the x-axis
+plt.gca().invert_xaxis()
+# set axis labels
+plt.xlabel('$\log T_eff /\mathrm{K}$')
+plt.ylabel('$\log L/L_\odot$')
+plt.show()
+```
+
+[!HR_Diagram](https://github.com/axr6077/Low-High-Mass-Star-Evolution/blob/main/out/output_22_0.png)
+
+
 
 ## External Libraries
 [py_mesa_reader](https://github.com/wmwolf/py_mesa_reader) by [Bill Wolf](https://github.com/wmwolf)
